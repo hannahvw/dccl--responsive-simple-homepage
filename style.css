@@ -14,6 +14,9 @@
   --color-gray-800: #111729;
   --color-primary: #2a4dd0;
   --color-accent: #4ca154;
+
+  --light: var(--color-100);
+  --dark: var(--color-gray-800);
 }
 
 html {
@@ -27,10 +30,10 @@ img {
 
 body {
   max-width: 640px;
+  background-color: var(--light);
 }
 
 header {
-  position: relative;
   height: 75px;
   width: 100vw;
 }
@@ -40,6 +43,72 @@ header .logo-icon {
   position: absolute;
   top: 25px;
   left: 25px;
+}
+
+header .menu-icon {
+  width: 30px;
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  cursor: pointer;
+}
+
+nav {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 60%;
+  text-align: center;
+  background-color: var(--color-white);
+}
+
+.close-button {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+nav ul {
+  margin-top: 75px;
+}
+
+nav ul li {
+  list-style: none;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: var(--color-gray-400);
+  cursor: pointer;
+}
+
+nav ul li:first-of-type {
+  color: var(--color-gray-800);
+}
+
+.dark-mode-toggle {
+  display: flex;
+  gap: 3px;
+  margin: 0 auto;
+  outline: none;
+  border: 2px solid var(--color-gray-800);
+  overflow: hidden;
+  border-radius: 25px;
+  background-color: var(--color-gray-800);
+  max-width: 15%;
+}
+
+.dark {
+  cursor: pointer;
+}
+
+.light {
+  background-color: var(--light);
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .hero-section {
