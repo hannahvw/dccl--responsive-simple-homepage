@@ -106,7 +106,7 @@ nav ul li:first-of-type {
   border-radius: 25px;
   background-color: var(--dark);
   min-width: 60px;
-  max-width: 20%;
+  max-width: 15%;
 }
 
 .moon {
@@ -130,7 +130,7 @@ nav ul li:first-of-type {
   border-radius: 25px;
   background-color: var(--light);
   min-width: 60px;
-  max-width: 20%;
+  max-width: 15%;
   display: none;
 }
 
@@ -153,6 +153,7 @@ nav ul li:first-of-type {
 }
 
 .main-section {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   margin-left: 50px;
