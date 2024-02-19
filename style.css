@@ -129,7 +129,7 @@ nav ul li:first-of-type {
   overflow: hidden;
   border-radius: 25px;
   background-color: var(--light);
-  max-width: 60px;
+  min-width: 60px;
   max-width: 20%;
   display: none;
 }
