@@ -36,6 +36,7 @@ img {
 body {
   max-width: 640px;
   background-color: var(--light);
+  position: relative;
 }
 
 header {
@@ -63,6 +64,7 @@ nav {
   position: absolute;
   right: 0;
   top: 0;
+  bottom: 0;
   height: 100%;
   width: 60%;
   text-align: center;
@@ -83,17 +85,19 @@ nav ul {
   margin-top: 75px;
 }
 
+nav a {
+  text-decoration: none;
+  color: var(--color-gray-400);
+}
+.about {
+  color: var(--dark);
+}
 nav ul li {
   list-style: none;
   font-size: 3rem;
   font-weight: 600;
   margin-bottom: 25px;
-  color: var(--color-gray-400);
   cursor: pointer;
-}
-
-nav ul li:first-of-type {
-  color: var(--color-gray-800);
 }
 
 .dark-mode-toggle {
@@ -150,6 +154,10 @@ nav ul li:first-of-type {
   width: 100vw;
   margin-top: 75px;
   padding: 25px;
+}
+
+.hero-section img {
+  max-width: 590px;
 }
 
 .main-section {
@@ -225,4 +233,53 @@ h2 {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    max-width: 1024px;
+  }
+  .hero-section {
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  max-width: 100%;
+}
+
+.main-section--text {
+  max-width: 60%;
+}
+.menu-icon, .close-button {
+  display: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  background-color: transparent;
+}
+
+nav ul {
+  margin-top: 30px;
+  display: flex;
+  margin-left: -75px;
+}
+
+nav ul li {
+  font-size: 0.875rem;
+  margin-right: 50px;
+}
+
+.dark-mode-toggle, .light-mode-toggle {
+  margin-top: 0px;
+  position: absolute;
+  right: 35px;
+  top: 25px;
+}
 }
