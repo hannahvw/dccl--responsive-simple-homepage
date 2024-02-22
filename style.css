@@ -287,7 +287,8 @@ h2 {
 
 @media screen and (min-width: 1280px) {
   body {
-    max-width: 1280px;
+    max-width: 100vw;
+    max-height: 100vh;
   }
   header .logo-icon {
     left: 50px;
@@ -307,7 +308,7 @@ h2 {
     grid-column-start: 2;
     width: 100%;
     margin-top: 0;
-    padding: 0;
+    padding: 0 50px 0 0;
   }
   .hero-section img {
     max-width: 100%;
