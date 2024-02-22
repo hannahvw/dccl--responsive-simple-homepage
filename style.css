@@ -29,8 +29,8 @@ html {
 }
 
 img {
-  width: 100%;
   display: block;
+  width: 100%;
 }
 
 body {
@@ -146,7 +146,6 @@ nav ul li {
 
 .light-sun {
   background-color: var(--light);
-
   cursor: pointer;
 }
 
@@ -157,7 +156,7 @@ nav ul li {
 }
 
 .hero-section img {
-  max-width: 590px;
+  max-width: 600px;
 }
 
 .main-section {
@@ -240,46 +239,90 @@ h2 {
     max-width: 1024px;
   }
   .hero-section {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  h2 {
+    max-width: 100%;
+  }
+
+  .main-section--text {
+    max-width: 60%;
+  }
+  .menu-icon,
+  .close-button {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+  }
+
+  nav {
+    display: flex;
+    background-color: transparent;
+  }
+
+  nav ul {
+    margin-top: 30px;
+    display: flex;
+    margin-left: -75px;
+  }
+
+  nav ul li {
+    font-size: 0.875rem;
+    margin-right: 50px;
+  }
+
+  .dark-mode-toggle,
+  .light-mode-toggle {
+    margin-top: 0px;
+    position: absolute;
+    right: 35px;
+    top: 25px;
+  }
 }
 
-h2 {
-  max-width: 100%;
-}
+@media screen and (min-width: 1280px) {
+  body {
+    max-width: 1280px;
+  }
+  header .logo-icon {
+    left: 50px;
+  }
+  .dark-mode-toggle,
+  .light-mode-toggle {
+    right: 50px;
+  }
 
-.main-section--text {
-  max-width: 60%;
-}
-.menu-icon, .close-button {
-  display: none;
-}
+  main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  .hero-section {
+    grid-column-start: 2;
+    width: 100%;
+    margin-top: 0;
+    padding: 0;
+  }
+  .hero-section img {
+    max-width: 100%;
+  }
 
-header {
-  display: flex;
-  align-items: center;
-}
+  .main-section {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin-top: 50px;
+  }
+  h2 {
+    max-width: 75%;
+  }
 
-nav {
-  display: flex;
-  background-color: transparent;
-}
-
-nav ul {
-  margin-top: 30px;
-  display: flex;
-  margin-left: -75px;
-}
-
-nav ul li {
-  font-size: 0.875rem;
-  margin-right: 50px;
-}
-
-.dark-mode-toggle, .light-mode-toggle {
-  margin-top: 0px;
-  position: absolute;
-  right: 35px;
-  top: 25px;
-}
+  .main-section--text {
+    max-width: 100%;
+  }
 }
